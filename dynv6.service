@@ -1,0 +1,18 @@
+[Unit]
+Description=dynv6 update
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/default/dynv6
+ExecStart=/usr/host/libexec/dynv6/update.sh
+
+User=dynv6
+Group=dynv6
+
+RuntimeDirectory=dynv6
+
+CapabilityBoundingSet=
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+NoNewPrivileges=true
