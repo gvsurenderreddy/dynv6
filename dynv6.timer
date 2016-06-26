@@ -4,3 +4,6 @@ Description=Trigger dynv6 update
 [Timer]
 OnStartupSec=60
 OnUnitActiveSec=60
+
+[Install]
+WantedBy=timers.target
